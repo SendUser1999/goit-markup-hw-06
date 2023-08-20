@@ -885,6 +885,12 @@ ul {
     color: var(--fifth-color);
     text-decoration: underline;
 }
+.span-privacy:focus {
+    border-color: #404bbf;
+}
+.span-privacy:hover {
+    border-color: #404BBF;
+}
 
 .span-privacy {
     width: 16px;
@@ -932,7 +938,6 @@ ul {
     color: #FFFFFF;
     border: 1px solid var(--main-color);
     background-color:transparent;
-    margin-right: 24px;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em; 
