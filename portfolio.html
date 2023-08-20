@@ -27,6 +27,59 @@
                     <li class="contacts-list"><a class="contact-item" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
                  </ul>               
             </address>
+                <button type="button" class="header-data-open" data-menu-open>
+                    <svg class="open-icon" width="30" height="19">
+                          <use href="./images/icons.svg#icon-charm"></use>
+                    </svg>
+                </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu-div">
+                <button type="button" class="header-menu-close" data-menu-close>
+                    <svg class="close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list">
+                    <li class="mob-menu-list-main"><a class="mob-menu-list-link current" href="index.html">Studio</a></li>
+                    <li class="mob-menu-list-main"><a class="mob-menu-list-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="mob-menu-list-main"><a class="mob-menu-list-link" href="Contacts">Contacts</a></li>
+                </ul>
+            </div>
+            <ul class="mob-menu-contacts"> 
+                <li class="mob-contacts-list mob-list-tel"><a class="mob-contact-item mob-tel" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+                <li class="mob-contacts-list mob-list-email"><a class="mob-contact-item mob-email" href="email:info@devstudio.com">info@devstudio.com</a></li> 
+             </ul>  
+            <ul class="mob-icons-list">
+                <li class="mob-icons-item">
+                    <a href="./images/icons.svg#icon-instagram" class="mob-icons-links" >
+                        <svg class="team-icons" width="24" height="24">
+                               <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-icons-item">
+                    <a href="./images/icons.svg#icon-twitter" class="mob-icons-links">
+                        <svg class="team-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-icons-item">
+                    <a href="./images/icons.svg#icon-facebook" class="mob-icons-links">
+                        <svg class="team-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-icons-item">
+                    <a href="./images/icons.svg#icon-linkedin" class="mob-icons-links">
+                        <svg class="team-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 <main class="options">
@@ -45,7 +98,12 @@
                         <li class="opportunities-item">
                             <a href="" class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/banking.jpg" alt="Banking App">
+                                    <picture>
+                                        <source srcset="images/bank-mob-1.jpg 1px, ./images/bank-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/bank-tab-1.jpg 1px, ./images/bank-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset= "images/bank-desk-1.jpg 1px, ./images/bank-desk-2.jpg 2px" media="(min-width:1158px)"/>
+                                        <img src="images/banking.jpg" alt="Banking App" width="396px"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -57,7 +115,12 @@
                         <li class="opportunities-item">
                             <a href="" class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/cashless.jpg" alt="Cashless Payment">
+                                    <picture>
+                                        <source srcset="images/pay-mob-1.jpg 1px, ./images/pay-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/pay-tab-1.jpg 1px, ./images/pay-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/pay-desk-1.jpg 1px, ./images/pay-desk-2.jpg 2px" media="(min-width:1158px)"/>                                                                                
+                                        <img src="images/cashless.jpg" alt="Cashless Payment" width="396px"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -69,7 +132,12 @@
                         <li class="opportunities-item">
                             <a href="" class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/meditation.jpg" alt="Meditation App" width="360">
+                                    <picture>
+                                        <source srcset="images/app-mob-1.jpg 1px, ./images/app-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/app-tab-1.jpg 1px, ./images/app-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/app-desk-1.jpg 1px, ./images/app-desk-2.jpg 2px" media="(min-width:1158px)"/>                                                                                
+                                        <img src="images/meditation.jpg" alt="Meditation App" width="396"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -81,7 +149,12 @@
                         <li class="opportunities-item">
                             <a href="" class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/taxi.jpg" alt="Taxi Service" width="360">
+                                    <picture>
+                                        <source srcset="images/taxi-mob1.jpg 1px, ./images/taxi-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/taxi-tab-1.jpg 1px, ./images/taxi-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/taxi-desk-1.jpg 1px, ./images/taxi-desk-2.jpg 2px" media="(min-width:1158px)"/>                                                                                
+                                        <img src="images/taxi.jpg" alt="Taxi Service" width="396"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -93,7 +166,12 @@
                         <li class="opportunities-item">
                             <a href="" class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/illustrations.jpg" alt="Screen Illustrations" width="360">
+                                    <picture>
+                                        <source srcset="images/screen-mob-1.jpg 1px, ./images/screen-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/screen-tab-1.jpg 1px, ./images/screen-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/screen-desk-1.jpg 1px, ./images/screen-desk-2.jpg 2px" media="(min-width:1158px)"/>
+                                        <img src="images/illustrations.jpg" alt="Screen Illustrations" width="396"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -105,7 +183,13 @@
                         <li class="opportunities-item">
                             <a class="item-card">
                                 <div class="opportunities-cover-wrap"> 
-                                    <img src="images/courses.jpg" alt="Online Courses" width="360">
+                                <div class="opportunities-cover-wrap">
+                                    <picture>
+                                        <source srcset="images/courses-mob-1.jpg 1px, ./images/courses-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/courses-tab-1.jpg 1px, ./images/courses-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/courses-desk-1.jpg 1px, ./images/courses-desk-2.jpg 2px" media="(min-width:1158px)"/>
+                                    <img src="images/courses.jpg" alt="Online Courses" width="396"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -117,7 +201,12 @@
                         <li class="opportunities-item">
                             <a class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/stories.jpg" alt="Instagram Stories Concept" width="360">
+                                    <picture>
+                                        <source srcset="images/inst-mob-1.jpg 1px, ./images/inst-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/inst-tab-1.jpg 1px, ./images/inst-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/inst-desk-1.jpg 1px, ./images/inst-desk-2.jpg 2px" media="(min-width:1158px)"/>
+                                        <img src="images/stories.jpg" alt="Instagram Stories Concept" width="396"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -129,7 +218,12 @@
                         <li class="opportunities-item">
                             <a class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/organic.jpg" alt="Organic Food" width="360">
+                                    <picture>
+                                        <source srcset="images/food-mob-1.jpg 1px, ./images/food-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/food-tab-1.jpg 1px, ./images/food-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/food-desk-1.jpg 1px, ./images/food-desk-2.jpg 2px" media="(min-width:1158px)"/>
+                                        <img src="images/organic.jpg" alt="Organic Food" width="396"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -141,7 +235,12 @@
                         <li class="opportunities-item">
                             <a class="item-card">
                                 <div class="opportunities-cover-wrap">
-                                    <img src="images/coffee.jpg" alt="Fresh Coffee" width="360">
+                                    <picture>
+                                        <source srcset="images/coffee-mob-1.jpg 1px, ./images/coffee-mob-2.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/coffee-tab-1.jpg 1px, ./images/coffee-tab-2.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/coffee-desk-1.jpg 1px, ./images/coffee-desk-2.jpg 2px" media="(min-width:1158px)"/>
+                                        <img src="images/coffee.jpg" alt="Fresh Coffee" width="396"/>
+                                    </picture>
                                     <p class="opportunities-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div>
                                 <div class="card">
@@ -156,58 +255,63 @@
 </main> 
 <footer class="end">
     <div class="container container-footer">
-        <div class="container-webstudio">
-            <a href="index.html" class="logo-end">Web<span class="logo-studio end-studio">Studio</span></a>
-            <p class="end-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-        </div>
-        <div class="container-socialmedia">
-            <p class="social-media-text">Social media</p>
-            <ul class="footer-icons-list">
-                <li class="footer-icons-item">
-                    <a href="./images/icons.svg#icon-instagram" class="footer-icons-links" >
-                        <svg class="team-icons" width="24" height="24">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-icons-item">
-                    <a href="./images/icons.svg#icon-twitter" class="footer-icons-links">
-                        <svg class="team-icons" width="24" height="24">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-icons-item">
-                    <a href="./images/icons.svg#icon-facebook" class="footer-icons-links">
-                        <svg class="team-icons" width="24" height="24">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-icons-item">
-                    <a href="./images/icons.svg#icon-linkedin" class="footer-icons-links">
-                        <svg class="team-icons" width="24" height="24">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+        <div class="container-web-social">
+            <div class="container-webstudio">
+                <a href="index.html" class="logo-end">Web<span class="logo-studio end-studio">Studio</span></a>
+                <p class="end-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+            </div>
+            <div class="container-socialmedia">
+                <p class="social-media-text">Social media</p>
+                <ul class="footer-icons-list">
+                    <li class="footer-icons-item">
+                        <a href="./images/icons.svg#icon-instagram" class="footer-icons-links" >
+                            <svg class="team-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons-item">
+                        <a href="./images/icons.svg#icon-twitter" class="footer-icons-links">
+                            <svg class="team-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons-item">
+                        <a href="./images/icons.svg#icon-facebook" class="footer-icons-links">
+                            <svg class="team-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons-item">
+                        <a href="./images/icons.svg#icon-linkedin" class="footer-icons-links">
+                            <svg class="team-icons" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="footer-subscribe-input">
-            <p class="subscribe-text">Subscribe</p>
-            <form class="subscribe-form">
-                <label aria-label="footer subscribe email input" class="footer-aria-label">
-                        <input type="email" name="footer-mail" class="footer-input" placeholder="E-mail"/>   
-                </label>
-                <button type="submit" class="footer-input-bottom">Subscribe
-                    <svg class="icons-subscribe" width="24" height="24">
-                        <use href="./images/icons.svg#icon-subscribe"></use>
-                    </svg>
-                </button> 
-            </form>
+                <p class="subscribe-text">Subscribe</p>
+                    <form class="subscribe-form">
+                        <div class="input-button">
+                            <label aria-label="footer subscribe email input" class="footer-aria-label">
+                                <input type="email" name="footer-mail" class="footer-input" placeholder="E-mail"/>   
+                        </label>
+                        <button type="submit" class="footer-input-bottom">Subscribe
+                            <svg class="icons-subscribe" width="24" height="24">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg>
+                        </button> 
+                        </div>
+                    </form>
         </div>
     </div>
 </footer> 
+<script src="js/menu.js"></script>
 </body>
 </html>
 
