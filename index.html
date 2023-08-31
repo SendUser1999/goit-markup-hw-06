@@ -23,7 +23,7 @@
             </nav>
             <address class="address">
                 <ul class="contacts"> 
-                    <li class="contacts-list"><a class="contact-item" href="email:info@devstudio.com">info@devstudio.com</a></li> 
+                    <li class="contacts-list"><a class="contact-item contact-item-email" href="email:info@devstudio.com">info@devstudio.com</a></li> 
                     <li class="contacts-list"><a class="contact-item" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
                  </ul>  
             </address>
@@ -41,7 +41,7 @@
                     </svg>
                 </button>
                 <ul class="mob-menu-list">
-                    <li class="mob-menu-list-main"><a class="mob-menu-list-link" href="index.html">Studio</a></li>
+                    <li class="mob-menu-list-main"><a class="mob-menu-list-link mob-list-link-studio" href="index.html">Studio</a></li>
                     <li class="mob-menu-list-main"><a class="mob-menu-list-link" href="portfolio.html">Portfolio</a></li>
                     <li class="mob-menu-list-main"><a class="mob-menu-list-link" href="Contacts">Contacts</a></li>
                 </ul>
@@ -138,11 +138,23 @@
                         <h2 class="about-do">What are we doing</h2>
                         <ul class="about-do-list">
                             <li class="about-do-item">
-                                <img src="images/img1.jpg" alt="Computer" width="360"></li>
+                                    <picture>
+                                        <source srcset="images/comp-1px.jpg 1px, ./images/comp-2px.jpg 2px" media="(min-width:1158px)" />
+                                        <img src="images/img1.jpg" alt="Computer" width="360">
+                                    </picture>
+                            </li>
                             <li class="about-do-item">
-                                <img src="images/img2.jpg" alt="Screen" width="360"></li>
+                                    <picture>
+                                        <source srcset="images/screen-1px.jpg 1px, ./images/screen-2px.jpg 2px" media="(min-width:1158px)" />
+                                        <img src="images/img2.jpg" alt="Screen" width="360">
+                                    </picture>
+                            </li>
                             <li class="about-do-item">
-                                <img src="images/img3.jpg" alt="Phone" width="360"></li>
+                                    <picture>
+                                        <source srcset="images/phone-1px.jpg 1px, ./images/phone-2px.jpg 2px" media="(min-width:1158px)" />
+                                        <img src="images/img3.jpg" alt="Phone" width="360">
+                                    </picture>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -152,7 +164,12 @@
                         <h2 class="our-team">Our Team</h2>
                         <ul class="our-team-list">
                             <li class="our-team-item our-team-item-mb">
-                                    <img src="images/mark.jpg" alt="Mark Guerrero" width="264">
+                                    <picture>
+                                        <source srcset="images/ph-mark-1px.jpg 1px, ./images/ph-mark-2px.jpg 2px" media="(min-width:428px)"/>
+                                        <source srcset="images/tab-mark-1px.jpg 1px, ./images/tab-mark-2px.jpg 2px" media="(min-width:768px)"/>
+                                        <source srcset="images/desk-mark-1px.jpg 1px, ./images/desk-mark-2px.jpg 2px" media="(min-width:1158px)"/>                                                                                
+                                        <img src="images/mark.jpg" alt="Mark Guerrero" width="264">
+                                    </picture>
                                     <div class="worker">
                                         <h3 class="name">Mark Guerrero</h3>
                                         <p class="who">Product Designer</p> 
@@ -189,7 +206,12 @@
                                     </div>                           
                             </li>
                             <li class="our-team-item our-team-item-mb">
-                                    <img class="photo" src="images/tom.jpg" alt="Tom Ford" width="264">
+                                    <picture>
+                                        <source srcset="images/ph-tom-1px.jpg 1px, ./images/ph-tom-2px.jpg 2px" media="(min-width:428px)" />
+                                        <source srcset="images/tab-tom-1px.jpg 1px, ./images/tab-tom-2px.jpg 2px" media="(min-width:768px)" />
+                                        <source srcset="images/desk-tom-1px.jpg 1px, ./images/desk-tom-2px.jpg 2px" media="(min-width:1158px)" />
+                                        <img class="photo" src="images/tom.jpg" alt="Tom Ford" width="264">
+                                    </picture>
                                     <div class="worker">
                                         <h3 class="name">Tom Ford</h3>
                                         <p class="who">Frontend Developer</p>
@@ -226,7 +248,12 @@
                                     </div>
                             </li>
                             <li class="our-team-item">
-                                    <img src="images/camila.jpg" alt="Camila Garcia" width="264">
+                                    <picture>
+                                        <source srcset="images/ph-camila-1px.jpg 1px, ./images/ph-camila-2px.jpg 2px" media="(min-width:428px)" />
+                                        <source srcset="images/tab-camila-1px.jpg 1px, ./images/tab-camila-2px.jpg 2px" media="(min-width:768px)" />
+                                        <source srcset="images/desk-camila-1px.jpg 1px, ./images/desk-camila-2px.jpg 2px" media="(min-width:1158px)" />
+                                        <img src="images/camila.jpg" alt="Camila Garcia" width="264">
+                                    </picture>
                                     <div class="worker">
                                         <h3 class="name">Camila Garcia</h3>
                                         <p class="who">Marketing</p>
@@ -263,7 +290,12 @@
                                     </div>
                             </li>
                             <li class="our-team-item">
-                                    <img src="images/daniel.jpg" alt="Daniel Wilson" width="264">
+                                    <picture>
+                                        <source srcset="images/ph-daniel-1px.jpg 1px, ./images/ph-daniel-2px.jpg 2px" media="(min-width:428px)" />
+                                        <source srcset="images/tab-daniel-1px.jpg 1px, ./images/tab-daniel-2px.jpg 2px" media="(min-width:768px)" />
+                                        <source srcset="images/desk-daniel-1px.jpg 1px, ./images/desk-daniel-2px.jpg 2px" media="(min-width:1158px)" />
+                                        <img src="images/daniel.jpg" alt="Daniel Wilson" width="264">
+                                    </picture>
                                     <div class="worker">
                                         <h3 class="name">Daniel Wilson</h3>
                                         <p class="who">UI Designer</p>

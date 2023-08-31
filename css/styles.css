@@ -127,6 +127,7 @@ ul {
 .mob-menu {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 20;
@@ -137,10 +138,14 @@ ul {
     overflow: auto;
 }
 .mob-menu-contacts {
-    margin-bottom: 48px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .mob-menu-list {
-    margin-bottom: 273px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .header-menu-close {
     display: flex;
@@ -182,6 +187,9 @@ ul {
     text-align: left;
 }
 .mob-menu-list-link:hover {
+    color: #404BBF;
+}
+.mob-list-link-studio {
     color: #404BBF;
 }
 
@@ -344,9 +352,13 @@ ul {
     color: #434455;
 
 }
-.about {
+/*.about {
     padding-bottom: 120px;
+}*/
+.about {
+    display: none;
 }
+
 .about-do {
     font-size: 36px;
     font-weight: 700;
@@ -1106,8 +1118,11 @@ ul {
         display: flex;
         margin-right: 121px;
     }
+
     .contacts {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
     }
     .contact-item {
         font-size: 12px;
@@ -1117,6 +1132,7 @@ ul {
     .container-web-social {
         display: flex;
         flex-direction: row;
+        margin-bottom: unset;
     }
     .logo-end {
         display: block;
@@ -1145,7 +1161,7 @@ ul {
         padding: 96px 0;
     }
     .customers {
-        padding: 96px;
+        padding: 96px 0;
     }
     .customers-list {
         row-gap: 72px;
@@ -1162,8 +1178,8 @@ ul {
     .container-footer {
         width: 584px;
     }
-    .container-web-social {
-        margin-bottom: 72px;
+    .logo {
+        margin-right: 120px;
     }
 
 }
@@ -1202,6 +1218,7 @@ ul {
     }
     .about {
         display: block;
+        padding-bottom: 120px;
     }
     .our-team-list {
         display: flex;
@@ -1265,6 +1282,12 @@ ul {
         margin-left: 100px;
         margin-right: 80px;
     }
+    .container-web-social {
+        margin-bottom: unset;
+    }
+    .container-webstudio {
+        margin-bottom: unset;
+    }
     .footer-input {
         max-width: 264px;
     }
@@ -1280,6 +1303,10 @@ ul {
     }
     .container-footer {
         width: 1158px;
+    }
+    .contact-item {
+        font-size: 16px;
+        line-height: calc(24/16);
     }
 }
 
